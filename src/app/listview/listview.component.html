@@ -1,0 +1,16 @@
+<ion-grid>
+  <ion-row>
+    <ion-col *ngIf="produk.stock != '0'">
+        <ion-item [routerLink]="['./', produk.id]">
+          <ion-thumbnail slot="start">
+            <img [src]="produk.imageUrl">
+          </ion-thumbnail>
+          <ion-label>
+            <h3>{{produk.model}}</h3>
+            <p>Rp {{produk.price}}</p>
+            <p>Tersedia {{produk.stock}}</p>
+          </ion-label>
+        </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>

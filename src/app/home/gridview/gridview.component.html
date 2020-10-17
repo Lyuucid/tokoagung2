@@ -1,0 +1,19 @@
+<ion-grid >
+  <ion-row class="ion-justify-content-start">
+    <ion-col>
+      <ion-card [routerLink]="['./home.page', produk.id]">
+        <img class="pic-fit" [src]="produk.imageUrl" >
+
+        <ion-card-header>
+          <h6>{{produk.model}}</h6>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-label>
+            <p>Rp {{produk.price}}</p>
+            <p>Tersedia {{produk.stock}}</p>
+          </ion-label>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
